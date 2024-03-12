@@ -5,3 +5,5 @@ import ListagemProdutos from '@/components/ListagemProdutos.vue';
 <template>
   <ListagemProdutos />
 </template>
+
+<style scoped></style>
