@@ -1,6 +1,9 @@
 <script setup>
 import { ref, onMounted } from 'vue';
+import { useScreen } from '@/composables/screen';
 import axios from 'axios';
+
+const { browserWidth, deviceWidth, isMobile } = useScreen();
 const produtos = ref([]);
 
 onMounted(async () => {
@@ -13,6 +16,11 @@ const formatPrice = (price) => `R$ ${price.toFixed(2).replace('.', ',')}`;
 
 <template>
   <div>
+    <h1>
+       Produtos - {{ browserWidth }} - {{ deviceWidth }} - {{
+      isMobile}} 
+      <span v-if="isMobile">É móvel</span>
+    </h1>
     <h1>Produtos</h1>
     <div class="container">
       <div class="card" v-for="produto in produtos" :key="produto.id">
