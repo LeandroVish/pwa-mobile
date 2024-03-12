@@ -14,7 +14,7 @@ const menuAberto = ref(false);
         <h1>FakeStore</h1>
       </div>
       <nav>
-        <ul :class="menuAberto ? 'menu' : ''">
+        <ul :class="menuAberto ? 'menu' : 'mobile'">
           <li>Home</li>
           <li>Eletrônicos</li>
           <li>Jóias</li>
@@ -72,7 +72,7 @@ nav li {
     display: block;
   }
 
-  nav .menu {
+  nav .mobile {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -83,7 +83,7 @@ nav li {
     text-align: right;
     padding: 10px 16px;
   }
-  nav .menu li {
+  nav .mobile li {
     display: block;
     margin-top: 12px;
   }
