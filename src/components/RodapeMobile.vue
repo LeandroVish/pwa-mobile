@@ -9,9 +9,9 @@ const { isMobile } = useScreen();
 </script>
 <template>
 <div v-if="isMobile" class="footer-mobile">
-    <CartPlus/>
-    <Account/>
-    <Home/>
+    <button><CartPlus/></button>
+    <button><Account/></button>
+    <button><Home/></button>
     <Menu/>
     </div>
 </template>
@@ -26,5 +26,9 @@ align-items: center;
 gap: 10%;
 position: fixed;
 bottom: 0;
+}
+button {
+    background-color: transparent;
+    border: transparent;
 }
 </style>

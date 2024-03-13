@@ -24,8 +24,8 @@
       </ul>
     </nav>
     <div class="header--icons">
-      <Account />
-      <CartPlus />
+      <button><Account/></button>
+      <button><CartPlus/></button>
       <Menu class="menu-hamburger" @click="menuAberto = !menuAberto" />
     </div>
   </header>

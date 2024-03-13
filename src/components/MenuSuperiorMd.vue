@@ -24,8 +24,8 @@
       </ul>
     </nav>
     <div class="header--icons">
-      <Account />
-      <CartPlus />
+      <button><Account/></button>
+      <button><CartPlus/></button>
       <Menu class="menu-hamburger" @click="menuAberto = !menuAberto" />
     </div>
   </header>
@@ -89,5 +89,11 @@
       display: block;
       margin-top: 12px;
     }
+  }
+  button {
+    background-color: transparent;
+    border-radius: 25px;
+    width: 30px;
+    height: 30px;
   }
 </style>
